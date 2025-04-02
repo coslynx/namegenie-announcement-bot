@@ -1,0 +1,48 @@
+{
+  "name": "nome-announcement-bot",
+  "version": "0.1.0",
+  "description": "A simple Discord bot that listens for an !announce [Name] command and replies with 'Announcing [Name]!' in the same channel.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "",
+  "license": "ISC",
+  "keywords": [
+    "discord",
+    "bot",
+    "announcement",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=20.x"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "audit": "npm audit --audit-level=high",
+    "prepare": ""
+  },
+  "dependencies": {
+    "discord.js": "14.18.0",
+    "dotenv": "16.4.7"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.14",
+    "@types/node": "22.13.17",
+    "@typescript-eslint/eslint-plugin": "8.29.0",
+    "@typescript-eslint/parser": "8.29.0",
+    "eslint": "9.23.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-plugin-prettier": "5.2.6",
+    "jest": "29.7.0",
+    "prettier": "3.5.3",
+    "ts-jest": "29.3.1",
+    "ts-node": "10.9.2",
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.8.2"
+  }
+}
