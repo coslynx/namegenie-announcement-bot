@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    /* If NOT transpiling code: */
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    /* If your code runs in the DOM: */
+    // "lib": ["es2022", "dom", "dom.iterable"],
+    /* If your code doesn't run in the DOM: */
+    "lib": ["ES2022"],
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    /* Source Map Options */
+    "sourceMap": true,
+    /* Declaration Files Options */
+    "declaration": true,
+    "declarationMap": true, // Optional: Generates source maps for declaration files
+    "stripInternal": true, // Optional: Do not emit declarations for code marked as internal
+    /* Type Checking Options */
+    "forceConsistentCasingInFileNames": true,
+    /* Completeness */
+    "noImplicitReturns": true, // Report error when not all code paths in function return a value.
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement.
+    "noUnusedLocals": true, // Report errors on unused local variables.
+    "noUnusedParameters": true // Report errors on unused parameters.
+  },
+  "include": [
+    "src/**/*" // Include all files in the src directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude dependencies
+    "dist", // Exclude the output directory
+    "tests" // Exclude test files from production build
+  ],
+  "ts-node": { // Options for ts-node / ts-node-dev
+    "transpileOnly": true, // Speeds up ts-node-dev by skipping type checking
+    "files": true,
+    "compilerOptions": {
+      // Important: ts-node requires module to be CommonJS
+      "module": "CommonJS"
+    }
+  }
+}
