@@ -1,0 +1,7 @@
+[
+  {
+    "name": "announce",
+    "description": "Announces the provided name back into the channel.",
+    "usage": "!announce [Name]"
+  }
+]
