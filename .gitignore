@@ -1,0 +1,38 @@
+# Node.js & npm/yarn specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # Optional: if not using lock files consistently or managing centrally
+yarn.lock # Optional: if not using lock files consistently or managing centrally
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Build output directory (from tsconfig.json outDir)
+dist/
+
+# Environment variables file (CRITICAL: Contains secrets!)
+.env
+*.env # Ignore all .env files, e.g. .env.development, .env.production
+.env.*.local
+
+# Log files
+*.log
+logs/
+
+# Test runner output (Jest)
+coverage/
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific directories
+.vscode/
+.idea/
+
+# Temporary files
+*~
+*.swp
+*.tmp
